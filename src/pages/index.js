@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import VisibilitySensor from '../components/visiblity'
+import Header from '../components/header'
 import PortfolioBlock from '../components/portfolioBlock'
 import './index.scss'
 
@@ -8,6 +9,18 @@ class Home extends React.Component {
   render () {
     return (
       <div>
+        <Header />
+        {
+          this.props.data.allDatoCmsPortfolioproject.edges.map((item, index) => {
+            return (
+              <VisibilitySensor
+                key={'portfolioblock' + index}
+              >
+                <PortfolioBlock data={item} />
+              </VisibilitySensor>
+            )
+          })
+        }
         {
           this.props.data.allDatoCmsPortfolioproject.edges.map((item, index) => {
             return (

@@ -8,7 +8,7 @@ export default class PortfolioBlock extends React.Component {
       <div className="portfolio-block">
         <div className="portfolio-block__container">
           <div className="portfolio-block__image">
-            <img className="portfolio-block__image-img" src={this.props.data.node.image.url} />
+            <div className="portfolio-block__image-img" style={{backgroundImage: 'url(' + this.props.data.node.image.url + ')'}} />
           </div>
           <div className="portfolio-block__data">
             <h5 className="h2 portfolio-block__title">
