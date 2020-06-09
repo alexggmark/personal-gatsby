@@ -104,7 +104,7 @@
   &__description {
     opacity: 0;
     transform: translateY(10px);
-    transition: 1s ease opacity 0.8s, 1s ease transform 0.8s;
+    transition: 1s ease opacity 1s, 1s ease transform 1s;
 
     .is-active & {
       opacity: 1;
@@ -131,6 +131,7 @@
 
       &--main {
         margin-bottom: 0;
+        padding: 5rem 3rem;
       }
     }
   }
@@ -147,6 +148,10 @@
       &--image {
         display: flex;
         margin: 0 1rem;
+      }
+
+      &--main {
+        padding: 5rem;
       }
     }
   }

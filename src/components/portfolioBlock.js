@@ -16,7 +16,7 @@ export default class PortfolioBlock extends React.Component {
             </h5>
             <div className="portfolio-block__technologies">
               {this.props.data.node.technologies.map((subitem, index) => (
-                <img src={subitem.image.url} width="40px" />
+                <img src={subitem.image.url} width="36px" />
                 ))}
             </div>
           </div>
