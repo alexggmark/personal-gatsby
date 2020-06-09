@@ -27,16 +27,18 @@ export default class PortfolioBlock extends React.Component {
             <div className="portfolio-block__button-container">
               <a
                 className="portfolio-block__button h2"
-                href="#"
+                href={this.props.data.node.githublink}
+                target="_BLANK"
               >
-                Button 1
+                Github
                 <img className="portfolio-block__arrow" src={arrow} />
               </a>
               <a
                 className="portfolio-block__button h2"
-                href="#"
+                href={this.props.data.node.sitelink}
+                target="_BLANK"
               >
-                Button 2
+                View Project
                 <img className="portfolio-block__arrow" src={arrow} />
               </a>
             </div>
