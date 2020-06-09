@@ -9,7 +9,9 @@ class Home extends React.Component {
   render () {
     return (
       <div>
-        <Header />
+        <VisibilitySensor>
+          <Header />
+        </VisibilitySensor>
         {
           this.props.data.allDatoCmsPortfolioproject.edges.map((item, index) => {
             return (

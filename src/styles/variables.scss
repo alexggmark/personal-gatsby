@@ -12,6 +12,20 @@ $breakpoint-lg: 1096px;
 $font-primary: 'Prata', serif;
 $font-secondary: 'Quicksand', sans-serif;
 
+body, html {
+  margin: 0;
+
+  @media screen and (min-width: $breakpoint-sm) {
+    margin: 0.5rem 0;
+  }
+}
+
+.h1 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: 17px;
+}
+
 .h2 {
   color: $color-primary;
   font-family: $font-secondary;
