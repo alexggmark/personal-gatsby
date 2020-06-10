@@ -13,14 +13,14 @@ export default class VisiblitySensor extends React.Component {
     const observer = new IntersectionObserver(
       ([entry]) => {
         console.log(entry.intersectionRatio)
-        if (entry.intersectionRatio > 0.7) {
+        if (entry.intersectionRatio > 0.5) {
           this.setState({ isActive: true })
         }
       },
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0.7
+        threshold: 0.5
       }
     )
 
