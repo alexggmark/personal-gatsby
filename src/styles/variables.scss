@@ -14,10 +14,6 @@ $font-secondary: 'Quicksand', sans-serif;
 
 body, html {
   margin: 0;
-
-  @media screen and (min-width: $breakpoint-sm) {
-    margin: 0.5rem 0;
-  }
 }
 
 .h1 {

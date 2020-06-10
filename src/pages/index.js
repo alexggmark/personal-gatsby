@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import VisibilitySensor from '../components/visiblity'
+import Navigation from '../components/navigation'
 import Header from '../components/header'
 import PortfolioBlock from '../components/portfolioBlock'
 import './index.scss'
@@ -9,6 +10,10 @@ class Home extends React.Component {
   render () {
     return (
       <div>
+        <VisibilitySensor>
+          <Navigation />
+        </VisibilitySensor>
+        <div className="spacer" />
         <VisibilitySensor>
           <Header />
         </VisibilitySensor>
