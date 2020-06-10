@@ -1,5 +1,4 @@
 import React from 'react'
-import VisibilitySensor from '../components/visiblity'
 import './header.scss'
 import bird from './assets/bird.svg'
 
