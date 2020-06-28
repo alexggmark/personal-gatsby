@@ -11,6 +11,7 @@
     background-color: #ffffff;
     box-sizing: border-box;
     display: flex;
+    // flex-shrink: 0;
     min-height: 330px;
     width: 100%;
 
@@ -84,6 +85,12 @@
       }
     }
 
+    &--text {
+      background-color: $color-primary;
+      color: $color-secondary;
+      padding: 0.3rem;
+    }
+
     .is-active & {
       opacity: 1;
       transform: translateY(0);
@@ -126,12 +133,14 @@
 
       &:last-child {
         margin-left: 1rem;
-        width: calc(100% - calc(100% / 3));
+        width: 100%;
       }
 
       &--main {
         margin-bottom: 0;
-        padding: 5rem 3rem;
+        flex-shrink: 0;
+        padding: 2rem;
+        width: 280px;
       }
     }
   }
@@ -142,7 +151,7 @@
     &__block {
       &:last-child {
         margin-left: 0;
-        width: calc(100% / 3);
+        width: calc(100% / 3 + 1rem);
       }
 
       &--image {
@@ -151,7 +160,8 @@
       }
 
       &--main {
-        padding: 5rem;
+        padding: 4rem;
+        width: 315px;
       }
     }
   }

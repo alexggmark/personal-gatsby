@@ -9,7 +9,7 @@ export default class Header extends React.Component {
         <div className="header__block header__block--main">
           <div className="header__block-inner">
             <h1 className="h1 header__logo">
-              Alex Grønmark
+              <span className="header__logo--text">Alex Grønmark</span>
             </h1>
             <h2 className="h2 header__subtitle">
               Web Developer
