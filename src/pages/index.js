@@ -24,28 +24,6 @@ class Home extends React.Component {
             )
           })
         }
-        {
-          this.props.data.allDatoCmsPortfolioproject.edges.map((item, index) => {
-            return (
-              <VisibilitySensor
-                key={'portfolioblock' + index}
-              >
-                <PortfolioBlock data={item} />
-              </VisibilitySensor>
-            )
-          })
-        }
-        {
-          this.props.data.allDatoCmsPortfolioproject.edges.map((item, index) => {
-            return (
-              <VisibilitySensor
-                key={'portfolioblock' + index}
-              >
-                <PortfolioBlock data={item} />
-              </VisibilitySensor>
-            )
-          })
-        }
       </div>
     )
   }
