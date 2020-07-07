@@ -21,7 +21,7 @@ export default class Header extends React.Component {
         </div>
         <div className="header__block header__block--description">
           <p className="header__description">
-            The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href
+            This is a portfolio of personal projects and things I own the rights to. Larger commercial projects available on request - full stack developer with 3 years experience.
           </p>
         </div>
       </header>
