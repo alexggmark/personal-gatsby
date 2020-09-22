@@ -21,7 +21,7 @@ export default class Header extends React.Component {
         </div>
         <div className="header__block header__block--description">
           <p className="header__description">
-            This is a portfolio of personal projects and things I own the rights to. Larger commercial projects available on request - full stack developer with 3 years experience.
+            Web developer with 3 years professional experience. Currently working in Typescript. Probably drinking Monster.
           </p>
         </div>
       </header>
